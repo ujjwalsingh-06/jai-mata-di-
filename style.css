@@ -684,3 +684,19 @@ textarea:focus{
     font-size:12px;
   }
 }
+/* Google Map Section */
+
+.location-section{
+  background:#1e293b;
+}
+
+.map-box{
+  overflow:hidden;
+  border-radius:18px;
+  border:1px solid rgba(212,175,55,.25);
+  box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.map-box iframe{
+  display:block;
+}
