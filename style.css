@@ -700,3 +700,29 @@ textarea:focus{
 .map-box iframe{
   display:block;
 }
+/* Mobile Hero Image Fix */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    padding-top: 170px;
+  }
+
+  .hero-image {
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+  }
+
+  .hero::before {
+    z-index: 1;
+  }
+
+  .hero-content {
+    z-index: 2;
+  }
+}
