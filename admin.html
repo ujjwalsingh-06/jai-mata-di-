@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
 
+  <link rel="stylesheet" href="admin.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <div class="admin-container">
+
+    <h1>Property Admin Panel</h1>
+
+    <form id="propertyForm">
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Property Title"
+        required
+      >
+
+      <input
+        type="text"
+        id="price"
+        placeholder="Price"
+        required
+      >
+
+      <input
+        type="text"
+        id="location"
+        placeholder="Location"
+        required
+      >
+
+      <input
+        type="text"
+        id="image"
+        placeholder="Image URL"
+        required
+      >
+
+      <textarea
+        id="description"
+        placeholder="Description"
+        rows="5"
+        required
+      ></textarea>
+
+      <button type="submit">
+        Add Property
+      </button>
+
+    </form>
+
+    <div id="message"></div>
+
+  </div>
+
+  <script src="admin.js"></script>
+
+</body>
+</html>
