@@ -1,1 +1,47 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0f172a;
+  color:white;
+}
 
+.admin-container{
+  max-width:700px;
+  margin:50px auto;
+  padding:30px;
+  background:#1e293b;
+  border-radius:16px;
+}
+
+h1{
+  color:#d4af37;
+  text-align:center;
+}
+
+input,
+textarea{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border-radius:8px;
+  border:1px solid #334155;
+  background:#0f172a;
+  color:white;
+}
+
+button{
+  width:100%;
+  padding:15px;
+  background:#d4af37;
+  color:#0f172a;
+  border:none;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+#message{
+  margin-top:15px;
+  text-align:center;
+  color:#d4af37;
+}
