@@ -623,25 +623,6 @@ textarea:focus{
     padding:24px;
   }
 }
-/* Video Section */
-.video-section{
-  background:#0f172a;
-}
-
-.video-box{
-  max-width:900px;
-  margin:auto;
-  border:1px solid rgba(212,175,55,.25);
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 20px 50px rgba(0,0,0,.35);
-}
-
-.video-box video{
-  width:100%;
-  display:block;
-  background:#000;
-}
 
 /* Floating Buttons */
 .floating-actions{
