@@ -766,3 +766,37 @@ textarea:focus{
   opacity:0;
   visibility:hidden;
 }
+/* Premium Scroll Animations */
+.reveal{
+  opacity:0;
+  transform:translateY(45px);
+  transition:all .9s ease;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.service-card,
+.property-card,
+.feature,
+.info-card,
+.gallery-item{
+  will-change:transform, opacity;
+}
+
+.hero-content{
+  animation:heroFade 1.2s ease forwards;
+}
+
+@keyframes heroFade{
+  from{
+    opacity:0;
+    transform:translateY(35px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
