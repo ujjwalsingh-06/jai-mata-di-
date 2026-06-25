@@ -178,3 +178,25 @@ window.addEventListener("load", () => {
     loader.classList.add("hide");
   }, 800);
 });
+// Premium Scroll Reveal
+const animatedItems = document.querySelectorAll(
+  ".service-card, .property-card, .feature, .info-card, .gallery-item, .contact-wrapper"
+);
+
+animatedItems.forEach(item => {
+  item.classList.add("reveal");
+});
+
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+animatedItems.forEach(item => {
+  revealObserver.observe(item);
+});
