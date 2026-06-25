@@ -171,3 +171,10 @@ document.body.style.transition =
 console.log(
   "Jay Mata Di Properties Website Loaded Successfully"
 );
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.classList.add("hide");
+  }, 800);
+});
