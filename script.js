@@ -200,3 +200,52 @@ const revealObserver = new IntersectionObserver(entries => {
 animatedItems.forEach(item => {
   revealObserver.observe(item);
 });
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            const counter = entry.target;
+
+            const target = +counter.dataset.target;
+
+            let current = 0;
+
+            const increment = target / 100;
+
+            const update = () =>{
+
+                if(current < target){
+
+                    current += increment;
+
+                    counter.innerText = Math.ceil(current);
+
+                    requestAnimationFrame(update);
+
+                }else{
+
+                    counter.innerText = target + "+";
+
+                }
+
+            }
+
+            update();
+
+            counterObserver.unobserve(counter);
+
+        }
+
+    });
+
+});
+
+counters.forEach(counter=>{
+
+    counterObserver.observe(counter);
+
+});
